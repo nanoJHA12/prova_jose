@@ -1,0 +1,25 @@
+CREATE DATABASE prova_jose;
+
+USE prova_jose;
+
+CREATE TABLE pessoa(
+	id int (11) primary key not null auto_increment,
+    nome varchar(4000) not null
+);
+
+SET sql_mode='';
+
+SET sql_mode='STRICT_ALL_TABLES';
+
+SELECT count(*) FROM pessoa;
+
+SELECT id, nome FROM pessoa WHERE id = '9';
+
+SELECT count(*) FROM pessoa WHERE nome ='ISABEL MARIA FARIAS FERNANDES DE OLIVEIRA';
+
+UPDATE pessoa SET nome ='JOSE HENRIQUE ALTISSIMO' WHERE id ='9';
+
+UPDATE pessoa SET nome ='JOSE HENRIQUE ALTISSIMO' WHERE id ='90';
+
+UPDATE pessoa SET nome ='JOSE HENRIQUE ALTISSIMO' WHERE id ='900';
+
